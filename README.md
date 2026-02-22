@@ -1,11 +1,13 @@
 # Enterprise Infrastructure Automation with Ansible  
 ### Managing 100+ AWS EC2 Instances at Scale
 
+![Status](https://img.shields.io/badge/Project-Production%20Ready-brightgreen)
 ![Ansible](https://img.shields.io/badge/Automation-Ansible-red)
 ![AWS](https://img.shields.io/badge/Cloud-AWS-orange)
 ![EC2](https://img.shields.io/badge/Compute-EC2-yellow)
 ![Linux](https://img.shields.io/badge/OS-Linux-blue)
-![Status](https://img.shields.io/badge/Project-Production%20Ready-brightgreen)
+![Prometheus](https://img.shields.io/badge/Monitoring-Prometheus-orange)
+![Grafana](https://img.shields.io/badge/Visualization-Grafana-yellow)
 
 ---
 
@@ -149,3 +151,6 @@ ansible-playbook site.yml
 - Role-based configuration management  
 
 ---
+## Monitoring Stack
+### Prometheus and Grafana
+<img width="1866" height="876" alt="image" src="https://github.com/user-attachments/assets/88da1d5b-95a8-4124-8c79-e5c86bb250a0" />
