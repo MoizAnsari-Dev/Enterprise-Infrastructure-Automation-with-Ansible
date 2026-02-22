@@ -129,6 +129,8 @@ private_key_file = ~/.ssh/mykey.pem
 ```
 ansible-inventory -i inventory/aws_ec2.yml --graph  
 ```
+<img width="705" height="312" alt="image" src="https://github.com/user-attachments/assets/0c3da76c-f65f-4570-b174-ac8f75531e4f" />
+
 ---
 
 ###  Execute Playbook
