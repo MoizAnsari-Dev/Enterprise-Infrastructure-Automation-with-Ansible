@@ -1,4 +1,4 @@
-# 🚀 Enterprise Infrastructure Automation with Ansible  
+# Enterprise Infrastructure Automation with Ansible  
 ### Managing 100+ AWS EC2 Instances at Scale
 
 ![Ansible](https://img.shields.io/badge/Automation-Ansible-red)
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project demonstrates enterprise-grade infrastructure automation using **Ansible**
 to manage and secure **100+ AWS EC2 instances**.
@@ -25,14 +25,14 @@ Key highlights:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 Ansible Control Node securely connects to multiple EC2 instances using SSH (key-based authentication) 
 and applies configuration consistently across all environments.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|----------|
@@ -44,8 +44,8 @@ and applies configuration consistently across all environments.
 
 ---
 
-## 📂 Project Structure
-
+## Project Structure
+```
 ansible-100-servers/
 │
 ├── inventory/
@@ -62,24 +62,24 @@ ansible-100-servers/
 ├── site.yml
 ├── ansible.cfg
 └── README.md
-
+```
 ---
 
-## ⚙️ Core Features
+## Core Features
 
-### ✅ Dynamic AWS Inventory
+### Dynamic AWS Inventory
 
 Automatically discovers running EC2 instances using:
-
+```
 plugin: amazon.aws.aws_ec2  
 regions:  
   - us-east-1  
 filters:  
   instance-state-name: running  
-
+```
 ---
 
-### ✅ SSH Hardening
+### SSH Hardening
 
 - Root login disabled  
 - Password authentication disabled  
@@ -87,57 +87,57 @@ filters:
 
 ---
 
-### ✅ Parallel Execution
+### Parallel Execution
 
 Configured in ansible.cfg:
-
+```
 [defaults]  
 forks = 50  
 host_key_checking = False  
-
+```
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### 1️⃣ Install Dependencies
-
+###  Install Dependencies
+```
 pip install boto3 botocore  
 ansible-galaxy collection install amazon.aws  
-
+```
 ---
 
-### 2️⃣ Configure AWS Credentials
-
+###  Configure AWS Credentials
+```
 aws configure  
-
+```
 Or attach IAM role (recommended in production).
 
 ---
 
-### 3️⃣ Configure SSH Key
-
+###  Configure SSH Key
+```
 mv mykey.pem ~/.ssh/  
 chmod 400 ~/.ssh/mykey.pem  
-
+```
 Update ansible.cfg:
-
+```
 private_key_file = ~/.ssh/mykey.pem  
-
+```
 ---
 
-### 4️⃣ Validate Inventory
-
+###  Validate Inventory
+```
 ansible-inventory -i inventory/aws_ec2.yml --graph  
-
+```
 ---
 
-### 5️⃣ Execute Playbook
-
+###  Execute Playbook
+```
 ansible-playbook site.yml  
-
+```
 ---
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 - Key-based SSH authentication only  
 - No hardcoded credentials  
@@ -145,14 +145,3 @@ ansible-playbook site.yml
 - Role-based configuration management  
 
 ---
-
-## 🎯 Resume-Ready Description
-
-Engineered enterprise-grade infrastructure automation for 100+ AWS EC2 instances using Ansible with dynamic inventory, implemented SSH hardening and security baselines using role-based architecture, and optimized deployment efficiency through parallel execution.
-
----
-
-## 👨‍💻 Author
-
-Moiz Ansari  
-DevOps | Cloud | Infrastructure Automation
