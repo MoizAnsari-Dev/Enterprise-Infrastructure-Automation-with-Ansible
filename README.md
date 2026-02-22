@@ -137,6 +137,8 @@ ansible-inventory -i inventory/aws_ec2.yml --graph
 ```
 ansible-playbook site.yml  
 ```
+<img width="1263" height="140" alt="image" src="https://github.com/user-attachments/assets/34f48e32-b0e3-4a36-a3c7-c1137065ffec" />
+
 ---
 
 ## Security Best Practices
