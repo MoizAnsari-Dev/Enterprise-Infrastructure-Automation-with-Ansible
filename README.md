@@ -13,7 +13,7 @@
 
 ## Overview
 
-This project demonstrates enterprise-grade infrastructure automation using **Ansible**
+This project demonstrates enterprise-grade infrastructure automation and monitoring using **Ansible**
 to manage and secure **100+ AWS EC2 instances**.
 
 Key highlights:
@@ -23,6 +23,8 @@ Key highlights:
 - SSH hardening
 - Security baseline enforcement
 - Parallel execution for scalability
+- Prometheus
+- Grafana
 - Production-ready configuration structure
 
 ---
