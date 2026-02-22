@@ -1,0 +1,10 @@
+- name: Install basic packages
+  apt:
+    name:
+      - vim
+      - curl
+      - git
+      - htop
+      - docker.io
+    state: present
+    update_cache: yes

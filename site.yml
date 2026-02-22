@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  roles:
+    - common
+    - ssh_hardening
+    - security

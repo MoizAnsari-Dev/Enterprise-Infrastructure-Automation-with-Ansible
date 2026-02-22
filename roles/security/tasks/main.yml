@@ -1,0 +1,12 @@
+- name: Install UFW
+  apt:
+    name: ufw
+    state: present
+    update_cache: yes
+
+- name: Allow SSH
+  command: ufw allow 22
+
+- name: Enable UFW
+  command: ufw --force enable
+
